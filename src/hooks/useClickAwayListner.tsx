@@ -7,7 +7,6 @@ export const useClickAwayListener = () => {
   const nodeRef = useRef<any>();
 
   function handleClickAway(e: any): void {
-    console.log(nodeRef.current, e.target)
     if(nodeRef.current && !nodeRef.current.contains(e.target)) {
       setHideVisibleNode(false);
     };
@@ -15,6 +14,7 @@ export const useClickAwayListener = () => {
 
   useEffect(() => {
     document.addEventListener("click", handleClickAway, true);
+    
     return(() => {
         document.removeEventListener("click", handleClickAway, true);
       }

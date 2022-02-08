@@ -19,11 +19,11 @@ const NavBar: React.FC = () => {
           </div>
         </Link>
         <div className="flex space-x-5 py-6 text-sm">
-          <div className="relative flex px-8 md:px-6 lg:px-6 flex-col">
-            <span onClick = { () => setHideVisibleNode((prevState: boolean) => !prevState) } className="font-bold px-4 py-2 border-2 border-orange-400 hover:border-white hover:bg-blue-300 rounded-full text-gray cursor-pointer">
+          <div ref={nodeRef} className="relative flex px-8 md:px-6 lg:px-6 flex-col">
+            <span  onClick = { () => setHideVisibleNode((prevState: boolean) => !prevState) } className="font-bold px-4 py-2 border-2 border-orange-400 hover:border-white hover:bg-blue-300 rounded-full text-gray cursor-pointer">
               Menu
             </span>
-            <div ref={nodeRef} className="absolute w-52 top-14 right-0 md:top-14 md:-left-10 lg:top-14 lg:-left-10">
+            <div className="absolute w-52 top-14 right-0 md:top-14 md:-left-10 lg:top-14 lg:-left-10">
               {
                 hideVisibleNode ? <DropDown /> : null
               }

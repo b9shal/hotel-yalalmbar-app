@@ -6,7 +6,7 @@ export const itemList: Iitem[] = [
     id: 1,
     itemName: "Momo",
     price: 100,
-    photo: "https://www.pngitem.com/pimgs/m/635-6356170_nepali-khana-hd-png-download.png",
+    photo: "https://b.zmtcdn.com/data/pictures/6/19658246/4ee4dfc657bc43a5e5ba0d62a0297fdd.png",
     tags: [{ id: 1, tag: "#MithoMomo"},{ id: 2, tag: "#MithoMomo"}]
   },
   {
@@ -32,14 +32,14 @@ export const itemList: Iitem[] = [
   },
   {
     id: 5,
-    itemName: "Chicken Balls",
+    itemName: "Roast",
     price: 100,
     photo: "https://media-cdn.tripadvisor.com/media/photo-s/16/3e/a2/87/fried-momo.jpg",
     tags: [{ id: 1, tag: "#MithoMomo"},{ id: 2, tag: "#MithoMomo"}]
   },
   {
     id: 6,
-    itemName: "Special CatPat",
+    itemName: "Chat-Pat",
     price: 100,
     photo: "https://i.pinimg.com/originals/b4/12/81/b4128152cbdae56c4eb9055748f3b1dd.png",
     tags: [{ id: 1, tag: "#MithoMomo"},{ id: 2, tag: "#MithoMomo"}]

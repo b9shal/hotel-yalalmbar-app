@@ -1,10 +1,9 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import { itemList } from '../../data/data';
-import { Card, Layout, NavBar } from "../components";
+import { Card, Layout } from "../components";
 
 const Home = () => {
-  console.log("home page")
   return (
     <div className="flex flex-col">
       <Head>
@@ -13,12 +12,14 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <div className="grid gap-12 grid-cols-1 px-24 md:grid-cols-2 lg:grid-cols-3 mt-44 mb-20">
-          { itemList.map((item) => (
-              <Card key= { item.id } itemName={item.itemName} price={item.price} photo={item.photo} tags={item.tags} />
-            )
-          )}
-        </div>
+        <Layout>
+          <div className="grid gap-12 grid-cols-1 px-24 md:grid-cols-2 lg:grid-cols-3">
+            { itemList.map((item) => (
+                <Card key= { item.id } itemName={item.itemName} price={item.price} photo={item.photo} tags={item.tags} />
+              )
+            )}
+          </div>
+        </Layout>
       </div>
     </div>
   );

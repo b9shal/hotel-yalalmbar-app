@@ -4,36 +4,36 @@ export const menuItems: ImenuItem[] = [
   { 
     id: 1,
     itemName: "Momo",
-    link: "/momos"
+    link: "/momo"
   },
   { 
     id: 2,
     itemName: "Sukuti",
-    link: "/momos"
+    link: "/sukuti"
   },
   { 
     id: 3,
     itemName: "Sekuwa",
-    link: "/momos"
+    link: "/sekuwa"
   },
   { 
     id: 4,
     itemName: "Chowmin",
-    link: "/momos"
+    link: "/chowmin"
   },
   { 
     id: 5,
     itemName: "Chicken Balls",
-    link: "/momos"
+    link: "/chicken-balls"
   },
   { 
     id: 6,
     itemName: "Chicken Roast",
-    link: "/momos"
+    link: "/roast"
   },
   { 
     id: 7,
     itemName: "Special Chat-Pat",
-    link: "/momos"
+    link: "/chatPate"
   },
 ]

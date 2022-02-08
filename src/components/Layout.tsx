@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import NavBar from "./NavBar"
 
 
@@ -5,7 +6,10 @@ const Layout: React.FC = ({ children }) => {
   return(
     <div>
       <NavBar/>
-      { children }
+      <div className="pt-44 pb-20">
+        { children }
+      </div>
+      <Footer/>
     </div>
   )
 }
