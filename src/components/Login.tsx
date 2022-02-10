@@ -1,6 +1,8 @@
-
+import { useState } from "react";
 
 const Login:React.FC = () => {
+
+
   return(
     <div className="flex flex-col gap-3 mx-auto my-10 py-20 w-1/2 h-3/4 bg-blue-300 rounded-lg">
       <p className="text-center text-2xl text-orange-400">Login</p>

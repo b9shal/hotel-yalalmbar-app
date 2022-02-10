@@ -7,7 +7,7 @@ import { Iitem } from "../../interfaces/itemInterface";
 const Card: React.FC<Iitem> = (item): JSX.Element => {
 
   const tags = item.tags.map((tag) => (
-    <span key={tag.id} className="inline-block p-1 shadow-lg bg-gray-200 text-sm font-semibold text-orange-400 rounded-full tracking-wide">{tag.tag}</span>
+    <span key={tag.id} className="inline-block p-1 bg-gray-200 text-sm font-semibold text-orange-400 rounded-full shadow-2xl tracking-wide">{tag.tag}</span>
     ))
 
   return(
